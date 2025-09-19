@@ -3,26 +3,315 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Silicon Template</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Silicon App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+
+<body class="light-theme">
 
   <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Danas sida</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">kontakta oss</a></li>
-          <li><a href="#">hjälp</a></li>
-          <li><a href="#">service</a></li>
-          <li><a href="#">rådgivning</a></li>
-          <li><a href="#">vad vi erbjuder</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="btn">personlig rådgivning</a>
+    <div class="header-bg">
+      <div class="container nav-bar">
+        <div class="logo-container">
+          <img src="images/main-shape.png" alt="Main Shape" class="logo-icon" />
+          <div class="logo-text">Silicon</div>
+        </div>
+        <div class="nav-actions">
+          <a class="toggle" href="#"><i class="bi bi-toggle-off"></i></a>
+          <a href="#" class="btn-primary">Sign In</a>
+        </div>
+      </div>
+
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Manage All Your Money in One App</h1>
+            <p class="h-undertext">
+              We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.
+            </p>
+            <div class="store-icons">
+              <img src="images/appstore.png" alt="App Store" />
+              <img src="images/googleplay.png" alt="Google Play" />
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="images/iphonedubbel.svg" alt="iPhone Image" class="mobile-shadow" />
+          </div>
+        </div>
+
+        <div class="logos">
+          <img src="images/Logos.png" alt="Logos" />
+        </div>
+      </div>
     </div>
   </header>
-  
+
+  <div class="extra-images">
+    <div class="features-wrapper">
+      <img src="images/iphone2.png" alt="iPhone Image" class="phone-image" />
+      <div class="features-content">
+        <h2>App Features</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-item">
+            <img src="images/icon1.png" alt="Icon 1" />
+            <div>
+              <strong>Easy Payments</strong>
+              <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/icon2.png" alt="Icon 2" />
+            <div>
+              <strong>Cost Statistics</strong>
+              <p>Mattis urna ultricies non amet, purus in auctor non.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/icon3.png" alt="Icon 3" />
+            <div>
+              <strong>Regular Cashback</strong>
+              <p>Fermentum vestibulum arcu elementum imperdiet.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/icon.png" alt="Icon 4" />
+            <div>
+              <strong>Data Security</strong>
+              <p>Accumsan vestibulum non justo, fermentum fames.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/icon5.png" alt="Icon 5" />
+            <div>
+              <strong>Support 24/7</strong>
+              <p>Facilisi in aenean quam mauris elementum.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <img src="images/icon6.png" alt="Icon 6" />
+            <div>
+              <strong>Top Standards</strong>
+              <p>Sociis sit risus id cursus lorem nibh.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="how-it-works">
+    <h2>How Does It Work?</h2>
+
+    <div class="app-preview">
+      <img src="images/fram1.png" alt="Financial Overview">
+      <img src="images/fram2.png" alt="Card Overview">
+      <img src="images/fram3.png" alt="Transfer Interface">
+    </div>
+
+    <div class="text-content">
+      <p class="caption">Latest transaction history</p>
+      <p class="description">
+        Mi non massa hendrerit amet erat. Accums tristique condimentum.
+      </p>
+    </div>
+  </section>
+
+  <section class="app-features">
+    <div class="features-grid">
+
+      <div class="feature-text">
+        <h2>Make your money transfer simple and clear</h2>
+        <ul class="checklist checklist-checks">
+          <li>Banking transactions are free for you</li>
+          <li>No monthly cash commission</li>
+          <li>Manage payments and transactions online</li>
+        </ul>
+        <a class="btn" href="#Learn-more">Learn more</a>
+      </div>
+
+      <div class="transfer-icon">
+        <img src="images/svåradelen1.png" alt="Financial Dashboard" />
+      </div>
+
+      <div class="contacts-icon">
+        <img src="images/svårabilden2.png" alt="Credit Card and Contacts" />
+      </div>
+
+      <div class="feature-text2">
+        <h2>Receive payment from international bank details</h2>
+        <ul class="checklist-right">
+          <li>
+            <img src="iconpayments.svg" alt="Payments icon" />
+            Manage your payments online. Mollis congue egestas.
+          </li>
+          <li>
+            <img src="icon-wallet.svg" alt="Wallet icon" />
+            Elementum pretium facilisi aenean quam mauris.
+          </li>
+        </ul>
+        <a class="btn" href="#Learn-more">Learn more</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="testimonials-row">
+      <div class="testimonials-left">
+        <h2>Clients are<br>Loving Our App</h2>
+      </div>
+
+      <div class="testimonials-right">
+        <div class="t-grid">
+
+          <article class="t-card">
+            <div class="quote-badge">“</div>
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <p>“Sit pretium aliquam tempor, orci dolor sed maecenas rutrum.”</p>
+            <div class="t-user">
+              <img src="images/tjej.png" alt="Emma Emlin">
+              <div>
+                <strong>Emma Emlin</strong>
+                <span>Software Engineer</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="t-card">
+            <div class="quote-badge">“</div>
+            <div class="stars">★ ★ ★ ★ ★</div>
+            <p>“Leo vel venenatis accumsan vestibulum sollicitudin porttitor.”</p>
+            <div class="t-user">
+              <img src="images/kille.png" alt="Albert Flores">
+              <div>
+                <strong>Albert Flores</strong>
+                <span>Designer</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faqs">
+  <div class="container faqs-grid">
+ 
+    <!-- Vänster kolumn -->
+    <div class="faqs-left">
+      <h2>Any questions?<br>Check out the FAQs</h2>
+      <p class="faqs-lead">
+        Still have unanswered questions and need to get in touch?
+      </p>
+ 
+      <div class="contact-cards">
+        <a href="#contact-us" class="contact-card">
+          <div class="contact-icon">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div class="contact-text">
+            <strong>Still have questions?</strong>
+            <span>Contact us</span>
+          </div>
+        </a>
+ 
+        <a href="#contact-us" class="contact-card">
+          <div class="contact-icon">
+            <i class="bi bi-chat-dots"></i>
+          </div>
+          <div class="contact-text">
+            <strong>Don’t like phone calls?</strong>
+            <span>Contact us</span>
+          </div>
+        </a>
+      </div>
+    </div>
+ 
+    <!-- Höger kolumn -->
+    <div class="faqs-right">
+      <div class="accordion">
+        <details class="acc-item">
+          <summary class="acc-summary">
+            Is any of my personal information stored in the App?
+          </summary>
+          <div class="acc-panel">
+            Yes. We only store what’s required to provide core features. Data is encrypted in transit and at rest.
+          </div>
+        </details>
+ 
+        <details class="acc-item">
+          <summary class="acc-summary">
+            What formats can I download my transaction history in?
+          </summary>
+          <div class="acc-panel">
+            You can export CSV and PDF summaries directly from the app.
+          </div>
+        </details>
+ 
+        <details class="acc-item" open>
+          <summary class="acc-summary">
+            Can I schedule future transfers?
+          </summary>
+          <div class="acc-panel">
+            Absolutely. Pick a date, amount, and recipient. You’ll get a confirmation before it’s sent.
+          </div>
+        </details>
+ 
+        <details class="acc-item">
+          <summary class="acc-summary">
+            When can I use Banking App services?
+          </summary>
+          <div class="acc-panel">
+            Services are available 24/7 except during short maintenance windows announced in advance.
+          </div>
+        </details>
+ 
+        <details class="acc-item">
+          <summary class="acc-summary">
+            Can I create my own password that is easy for me to remember?
+          </summary>
+          <div class="acc-panel">
+            Yes, but we enforce strong password rules to keep your account secure.
+          </div>
+        </details>
+ 
+        <details class="acc-item">
+          <summary class="acc-summary">
+            What happens if I forget or lose my password?
+          </summary>
+          <div class="acc-panel">
+            Use the “Forgot password” flow to reset securely via email or 2FA.
+          </div>
+        </details>
+      </div>
+    </div>
+ 
+  </div>
+</section>
+ 
+ 
+</section>
+ 
+ 
+ 
+ 
+</main>
+ 
+ 
+ 
+ 
+<footer></footer>
+
 </body>
 </html>
