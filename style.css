@@ -512,3 +512,62 @@ body {
   background: #F8F7FF;
   border-color: #E0E7FF;
 }
+.newsletter {
+  background-color: #e0f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: auto;
+  font-family: sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.bell-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.dot-icon {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 15px;
+  height: 15px;
+}
+
+.message {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.subscribe-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.subscribe-button img {
+  height: 40px;
+}
