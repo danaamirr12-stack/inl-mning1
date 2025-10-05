@@ -102,6 +102,11 @@ body {
   justify-content: center;
 }
 
+.hero-image img {
+  box-shadow: none !important;
+  transition: none !important;
+}
+
 .mobile-shadow {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   max-width: 100%;
@@ -206,6 +211,10 @@ body {
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
+}
+
+img:not(.app-preview img) {
+  transition: none !important;
 }
 
 .app-preview img:hover {
@@ -386,42 +395,44 @@ body {
 .t-user span {
   font-size: 12px
 }
-/* Sektion & gridlayout (ingen responsivitet) */
+
 .faqs {
   background: #FFFFFF;
   padding: 80px 0;
 }
+
 .faqs .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
 .faqs-grid {
   display: grid;
   grid-template-columns: 35% 65%;
   gap: 48px 64px;
   align-items: start;
 }
- 
-
 .faqs-left h2 {
   margin: 0 0 12px 0;
   color: #0B0F19;
   font-size: 32px;
   line-height: 1.25;
 }
+
 .faqs-lead {
   margin: 0 0 24px 0;
   color: #565973;
   font-size: 16px;
   line-height: 1.6;
 }
- 
+
 .contact-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+
 .contact-card {
   display: flex;
   align-items: center;
@@ -434,7 +445,9 @@ body {
   color: #0B0F19;
   box-shadow: 0 6px 16px rgba(17,24,39,0.06);
 }
+
 .contact-card:hover { background: #F3F6FF; }
+
 .contact-icon {
   width: 40px;
   height: 40px;
@@ -446,22 +459,24 @@ body {
   justify-content: center;
   font-size: 18px;
 }
+
 .contact-text strong {
   display: block;
   font-size: 14px;
   color: #0B0F19;
 }
+
 .contact-text span {
   display: block;
   font-size: 13px;
   color: #6366F1;
 }
- 
-/* Höger kolumn – accordion med <details> */
+
 .accordion {
   display: grid;
   gap: 12px;
 }
+
 .acc-item {
   border: 1px solid #E5E7EB;
   border-radius: 12px;
@@ -469,8 +484,7 @@ body {
   box-shadow: 0 6px 16px rgba(17,24,39,0.06);
   overflow: hidden;
 }
- 
-/* frågeraden */
+
 .acc-summary {
   list-style: none;
   cursor: pointer;
@@ -481,8 +495,9 @@ body {
   color: #0B0F19;
   outline: none;
 }
-.acc-summary::-webkit-details-marker { display: none; } 
- 
+
+.acc-summary::-webkit-details-marker { display: none; }
+
 .acc-summary::after {
   content: "▾";
   position: absolute;
@@ -493,10 +508,10 @@ body {
   color: #6366F1;
   font-size: 18px;
 }
+
 .acc-item[open] .acc-summary::after {
   transform: translateY(-50%) rotate(180deg);
 }
- 
 
 .acc-panel {
   padding: 0 18px 18px 18px;
@@ -506,20 +521,21 @@ body {
   background: #FFFFFF;
   border-top: 1px solid #E5E7EB;
 }
- 
 
 .acc-item[open] {
   background: #F8F7FF;
   border-color: #E0E7FF;
 }
+
 .newsletter {
   background-color: #e0f0ff;
   padding: 20px;
   border-radius: 10px;
   max-width: 500px;
-  margin: auto;
+  margin: 40px auto 40px auto;
   font-family: sans-serif;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .icon-wrapper {
@@ -528,6 +544,7 @@ body {
   align-items: center;
   gap: 10px;
   margin-bottom: 15px;
+  justify-content: center;
 }
 
 .bell-icon {
@@ -547,11 +564,15 @@ body {
   flex: 1;
   font-size: 16px;
   color: #333;
+  text-align: center;
 }
 
 .subscribe-form {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .subscribe-form input {
@@ -570,4 +591,32 @@ body {
 
 .subscribe-button img {
   height: 40px;
+}
+
+footer {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+footer {
+  background-color: #f3f6ff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #565973;
+  border-top: 1px solid #e5e7eb;
+}
+
+.footer-content p {
+  margin: 6px 0;
+}
+
+.footer-content a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
 }
